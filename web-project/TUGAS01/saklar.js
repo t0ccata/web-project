@@ -11,6 +11,8 @@ function saklar(action, lamp){
     let toggleTamu = document.getElementById("default-toggle-tamu")
     let toggleTidur1 = document.getElementById("default-toggle-tidur1")
     let toggleTidur2 = document.getElementById("default-toggle-tidur2")
+    let toggleSpecial1 = document.getElementById("default-toggle-special1")
+    let toggleSpecial2 = document.getElementById("default-toggle-special2")
 
     let lampu1 = document.getElementById("lampu1")
     let lampu2 = document.getElementById("lampu2")
@@ -21,7 +23,7 @@ function saklar(action, lamp){
     let lampu7 = document.getElementById("lampu7")
     let lampu8 = document.getElementById("lampu8")
 
-    if(toggle1.checked || toggleKeluarga.checked){
+    if(toggle1.checked || toggleKeluarga.checked || toggleSpecial1.checked){
         lampu1.src = "asset/images/on.png"
     }else{
         lampu1.src = "asset/images/off.png"
@@ -39,7 +41,7 @@ function saklar(action, lamp){
         lampu3.src = "asset/images/off.png"
     }
 
-    if(toggle4.checked || toggleTamu.checked){
+    if(toggle4.checked || toggleTamu.checked || toggleSpecial2.checked){
         lampu4.src = "asset/images/on.png"
     }else{
         lampu4.src = "asset/images/off.png"
@@ -51,7 +53,7 @@ function saklar(action, lamp){
         lampu5.src = "asset/images/off.png"
     }
 
-    if(toggle6.checked || toggleTidur1.checked){
+    if(toggle6.checked || toggleTidur1.checked || toggleSpecial2.checked){
         lampu6.src = "asset/images/on.png"
     }else{
         lampu6.src = "asset/images/off.png"
@@ -63,7 +65,7 @@ function saklar(action, lamp){
         lampu7.src = "asset/images/off.png"
     }
 
-    if(toggle8.checked || toggleTidur2.checked){
+    if(toggle8.checked || toggleTidur2.checked || toggleSpecial1.checked){
         lampu8.src = "asset/images/on.png"
     }else{
         lampu8.src = "asset/images/off.png"
