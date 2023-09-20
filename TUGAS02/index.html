@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUGAS 02</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<body style="background-color: black;">
-    <div style="padding: 20px;">
-        <div style="display: inline-flex;">
+<body>
+    <div id="sec1">
+        <div id="sec2">
             <!-- SAKLAR 1 START -->
-            <label for="default-toggle-keluarga" style="padding: 20px;">
+            <label for="default-toggle-keluarga" id="saklar1">
                 <input type="checkbox" id="default-toggle-keluarga" onchange="saklar()">
                 <span style="color: white;">Ruang Keluarga</span>
             </label>
@@ -17,7 +18,7 @@
 
             <!-- LAMPU 1 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu1" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu1">
                 <br>
                 <label for="default-toggle1">
                     <input type="checkbox" id="default-toggle1" onchange="saklar()">
@@ -27,7 +28,7 @@
 
             <!-- LAMPU 2 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu2" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu2">
                 <br>
                 <label for="default-toggle2">
                     <input type="checkbox" id="default-toggle2" onchange="saklar()">
@@ -36,7 +37,7 @@
             <!-- LAMPU 2 END -->
 
             <!-- SAKLAR 2 START -->
-            <label for="default-toggle-tamu" style="padding: 20px;">
+            <label for="default-toggle-tamu" id="saklar2">
                 <input type="checkbox" id="default-toggle-tamu" onchange="saklar()">
                 <span style="color: white;">Ruang Tamu</span>
             </label>
@@ -44,7 +45,7 @@
 
             <!-- LAMPU 3 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu3" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu3">
                 <br>
                 <label for="default-toggle3">
                     <input type="checkbox" id="default-toggle3" onchange="saklar()">
@@ -54,7 +55,7 @@
 
             <!-- LAMPU 4 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu4" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu4">
                 <br>
                 <label for="default-toggle4">
                     <input type="checkbox" id="default-toggle4" onchange="saklar()">
@@ -67,7 +68,7 @@
 
         <div style="display: inline-flex;">
             <!-- SAKLAR 3 START -->
-            <label for="default-toggle-tidur1" style="padding: 20px;">
+            <label for="default-toggle-tidur1" id="saklar3">
                 <input type="checkbox" id="default-toggle-tidur1" onchange="saklar()">
                 <span style="color: white;">Kamar Tidur</span>
             </label>
@@ -75,7 +76,7 @@
 
             <!-- LAMPU 5 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu5" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu5">
                 <br>
                 <label for="default-toggle5">
                     <input type="checkbox" id="default-toggle5" onchange="saklar()">
@@ -85,7 +86,7 @@
 
             <!-- LAMPU 6 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu6" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu6">
                 <br>
                 <label for="default-toggle6">
                     <input type="checkbox" id="default-toggle6" onchange="saklar()">
@@ -94,7 +95,7 @@
             <!-- LAMPU 6 END -->
 
             <!-- SAKLAR 4 START -->
-            <label for="default-toggle-tidur2" style="padding: 20px;">
+            <label for="default-toggle-tidur2" id="saklar4">
                 <input type="checkbox" id="default-toggle-tidur2" onchange="saklar()">
                 <span style="color: white;">Kamar Tidur 2</span>
             </label>
@@ -102,7 +103,7 @@
 
             <!-- LAMPU 7 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu7" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu7">
                 <br>
                 <label for="default-toggle7">
                     <input type="checkbox" id="default-toggle7" onchange="saklar()">
@@ -112,7 +113,7 @@
 
             <!-- LAMPU 8 START -->
             <div>
-                <img src="asset/images/off.png" id="lampu8" style="padding: 20px;">
+                <img src="asset/images/off.png" id="lampu8">
                 <br>
                 <label for="default-toggle8">
                     <input type="checkbox" id="default-toggle8" onchange="saklar()">
@@ -123,7 +124,7 @@
 
         <br>
 
-        <div style="padding: 20px;">
+        <div id="saklar-special1">
             <label for="default-toggle-special1">
                 <input type="checkbox" id="default-toggle-special1" onchange="saklar()">
                 <span style="color: white;">Special 1</span>
@@ -132,10 +133,12 @@
 
         <br>
 
-        <label for="default-toggle-special2" style="padding: 20px;">
-            <input type="checkbox" id="default-toggle-special2" onchange="saklar()">
-            <span style="color: white;">Special 2</span>
-        </label>
+        <div id="saklar-special2">
+            <label for="default-toggle-special2">
+                <input type="checkbox" id="default-toggle-special2" onchange="saklar()">
+                <span style="color: white;">Special 2</span>
+            </label>
+        </div>
 
 
     </div>
