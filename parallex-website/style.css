@@ -65,6 +65,7 @@ header ul li a:hover, header ul li a.active
     background: #ffff;
     color: #2b1055;
     border-radius: 20px;
+    transition-delay: 0.1s;
 }
 
 section
