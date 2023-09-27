@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KALKULATOR tipe 02</title>
+</head>
+<body>
+    <h1>KALKULATOR tipe 02</h1>
+    <input type="text" id="display" disabled>
+    <br><br>
+    <button onclick="appendToDisplay(0)">0</button>
+    <button onclick="appendToDisplay(1)">1</button>
+    <button onclick="appendToDisplay(2)">2</button>
+    <button onclick="appendToDisplay(3)">3</button>
+    <button onclick="appendToDisplay(4)">4</button>
+    <button onclick="appendToDisplay(5)">5</button>
+    <button onclick="appendToDisplay(6)">6</button>
+    <button onclick="appendToDisplay(7)">7</button>
+    <button onclick="appendToDisplay(8)">8</button>
+    <button onclick="appendToDisplay(9)">9</button>
+    <br>
+    <button onclick="appendToDisplay('+')">+</button>
+    <button onclick="appendToDisplay('-')">-</button>
+    <button onclick="appendToDisplay('*')">*</button>
+    <button onclick="appendToDisplay('/')">/</button>
+    <br>
+    <button onclick="clearDisplay()">C</button>
+    <button onclick="appendToDisplay('.')">.</button>
+    <button onclick="clearDisplay()">AC</button>
+    <button onclick="calculateResult()">=</button>
+    
+    <script>
+        let display = document.getElementById("display");
+
+        function appendToDisplay(value) {
+            display.value += value;
+        }
+
+        function clearDisplay() {
+            display.value = "";
+        }
+
+        function calculateResult() {
+            try {
+                const expression = display.value;
+                const safeFunction = new Function('return ' + expression);
+                const result = safeFunction();
+                display.value = result;
+            } catch (error) {
+                display.value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
